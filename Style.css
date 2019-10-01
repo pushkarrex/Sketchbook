@@ -1,0 +1,92 @@
+.container{ -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;}
+#sketchpad {
+
+    border:2px solid #888;
+    border-radius:4px;
+    position:relative; /* Necessary for correct mouse co-ords in Firefox */
+}
+
+
+.item1{
+	grid-area: Header;
+	justify-content: center;
+	text-align: center;
+	padding: 0;
+	display:inline-block;
+
+
+
+}
+.item2{
+	grid-area: button1;
+
+
+}
+.item3{
+	grid-area: canvas;
+
+
+}
+
+.container{
+	display: grid;
+	grid-template-areas: 
+	'Header Header Header Header Header button1'
+	'canvas canvas canvas canvas canvas canvas'
+	'canvas canvas canvas canvas canvas canvas'
+	'canvas canvas canvas canvas canvas canvas'
+	'canvas canvas canvas canvas canvas canvas'
+	'canvas canvas canvas canvas canvas canvas'
+	'canvas canvas canvas canvas canvas canvas'
+	'canvas canvas canvas canvas canvas canvas';
+	grid-gap: 10px;
+	background-color: orange;
+	
+	 
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0;
+    border: 15px solid orange
+   
+
+}
+
+.container > div {
+  background-color: rgba(255, 255, 255, 1);
+  text-align: center;
+  padding: 0;
+  font-size: 30px;
+}
+
+.example_c {
+color: #494949 !important;
+text-transform: uppercase;
+text-decoration: none;
+background: #ffffff;
+padding: 20px;
+border: 4px solid #494949 !important;
+display: inline-block;
+transition: all 0.4s ease 0s;
+margin-top: 30px;
+}
+
+.example_c:hover {
+color: #ffffff !important;
+background: #f6b93b;
+border-color: #f6b93b !important;
+transition: all 0.4s ease 0s;
+border-radius: 20px;
+}
+
+.text{
+	font-family: Courier New,Courier, sans-serif;
+	font-style: italic;
+
+	font-weight: 700;
+	font-size: 2em;
+	color :#FFC531;
+}
